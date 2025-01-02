@@ -6,11 +6,8 @@ orgs.newOrg('modeling.elk', 'eclipse-elk') {
     name: "Eclipse ELK project",
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
-      default_workflow_permissions: "read",
     },
   },
-  teams+: [
-  ],
   webhooks+: [
     orgs.newOrgWebhook('https://ci.eclipse.org/elk/github-webhook/') {
       content_type: "json",

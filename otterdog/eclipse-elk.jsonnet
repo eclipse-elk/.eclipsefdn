@@ -23,7 +23,7 @@ orgs.newOrg('modeling.elk', 'eclipse-elk') {
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "actions",
-        "python",
+        "java-kotlin",
       ],
       code_scanning_default_setup_enabled: true,
       default_branch: "master",
